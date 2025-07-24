@@ -1,0 +1,6 @@
+framework module Pods_Tea_recipe {
+  umbrella header "Pods-Tea recipe-umbrella.h"
+
+  export *
+  module * { export * }
+}

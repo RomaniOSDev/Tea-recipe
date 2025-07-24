@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74F70F7A2E32DEA900C8880C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70F702E32DEA900C8880C /* AppDelegate.swift */; };
+		74F70F7B2E32DEA900C8880C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70F772E32DEA900C8880C /* SceneDelegate.swift */; };
+		74F70F7C2E32DEA900C8880C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70F782E32DEA900C8880C /* ViewController.swift */; };
+		74F70F7D2E32DEA900C8880C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F70F712E32DEA900C8880C /* Assets.xcassets */; };
+		74F70F7F2E32DEA900C8880C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F70F742E32DEA900C8880C /* LaunchScreen.storyboard */; };
+		74F70F802E32DEA900C8880C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F70F762E32DEA900C8880C /* Main.storyboard */; };
+		74F70FB22E32DF0200C8880C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FB02E32DF0200C8880C /* RootView.swift */; };
+		74F70FB32E32DF0200C8880C /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FB12E32DF0200C8880C /* SplashScreen.swift */; };
+		74F70FB42E32DF0200C8880C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FAF2E32DF0200C8880C /* MainView.swift */; };
+		74F70FB72E32DF2600C8880C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FB52E32DF2600C8880C /* OnboardingView.swift */; };
+		74F70FBE2E32DF2600C8880C /* AddTeaForCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FB82E32DF2600C8880C /* AddTeaForCollectionView.swift */; };
+		74F70FBF2E32DF2600C8880C /* CollectionOpenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FB92E32DF2600C8880C /* CollectionOpenView.swift */; };
+		74F70FC02E32DF2600C8880C /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FBA2E32DF2600C8880C /* CollectionView.swift */; };
+		74F70FC12E32DF2600C8880C /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FBB2E32DF2600C8880C /* CollectionViewModel.swift */; };
+		74F70FC22E32DF2600C8880C /* NewCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FBC2E32DF2600C8880C /* NewCollectionView.swift */; };
+		74F70FC92E32DF2600C8880C /* CellForAddTeaview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FC32E32DF2600C8880C /* CellForAddTeaview.swift */; };
+		74F70FCA2E32DF2600C8880C /* CellForCollectionTEeaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FC42E32DF2600C8880C /* CellForCollectionTEeaView.swift */; };
+		74F70FCB2E32DF2600C8880C /* CellForCollectionview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FC52E32DF2600C8880C /* CellForCollectionview.swift */; };
+		74F70FCC2E32DF2600C8880C /* CellForTeaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FC62E32DF2600C8880C /* CellForTeaView.swift */; };
+		74F70FCD2E32DF2600C8880C /* CustonTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FC72E32DF2600C8880C /* CustonTextField.swift */; };
+		74F70FD22E32DF2600C8880C /* Tea.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FCE2E32DF2600C8880C /* Tea.xcdatamodeld */; };
+		74F70FD32E32DF2600C8880C /* TeaCDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FCF2E32DF2600C8880C /* TeaCDManager.swift */; };
+		74F70FD62E32DF2600C8880C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FD42E32DF2600C8880C /* SettingsView.swift */; };
+		74F70FDA2E32DF2600C8880C /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FD72E32DF2600C8880C /* FavoritesView.swift */; };
+		74F70FDB2E32DF2600C8880C /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FD82E32DF2600C8880C /* FavoriteViewModel.swift */; };
+		74F70FE02E32DF2600C8880C /* NewTeaVew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FDC2E32DF2600C8880C /* NewTeaVew.swift */; };
+		74F70FE12E32DF2600C8880C /* TeaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FDD2E32DF2600C8880C /* TeaListView.swift */; };
+		74F70FE22E32DF2600C8880C /* TeaListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70FDE2E32DF2600C8880C /* TeaListViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4145ADE550D5B52BF50DB6B1 /* Pods-Tea recipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea recipe.debug.xcconfig"; path = "Target Support Files/Pods-Tea recipe/Pods-Tea recipe.debug.xcconfig"; sourceTree = "<group>"; };
+		74F70F562E32DE9100C8880C /* Tea recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tea recipe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F70F702E32DEA900C8880C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74F70F712E32DEA900C8880C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74F70F722E32DEA900C8880C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74F70F732E32DEA900C8880C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74F70F752E32DEA900C8880C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		74F70F772E32DEA900C8880C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		74F70F782E32DEA900C8880C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74F70FAF2E32DF0200C8880C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		74F70FB02E32DF0200C8880C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		74F70FB12E32DF0200C8880C /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		74F70FB52E32DF2600C8880C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		74F70FB82E32DF2600C8880C /* AddTeaForCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeaForCollectionView.swift; sourceTree = "<group>"; };
+		74F70FB92E32DF2600C8880C /* CollectionOpenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionOpenView.swift; sourceTree = "<group>"; };
+		74F70FBA2E32DF2600C8880C /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		74F70FBB2E32DF2600C8880C /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
+		74F70FBC2E32DF2600C8880C /* NewCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionView.swift; sourceTree = "<group>"; };
+		74F70FC32E32DF2600C8880C /* CellForAddTeaview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForAddTeaview.swift; sourceTree = "<group>"; };
+		74F70FC42E32DF2600C8880C /* CellForCollectionTEeaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForCollectionTEeaView.swift; sourceTree = "<group>"; };
+		74F70FC52E32DF2600C8880C /* CellForCollectionview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForCollectionview.swift; sourceTree = "<group>"; };
+		74F70FC62E32DF2600C8880C /* CellForTeaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForTeaView.swift; sourceTree = "<group>"; };
+		74F70FC72E32DF2600C8880C /* CustonTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustonTextField.swift; sourceTree = "<group>"; };
+		74F70FCF2E32DF2600C8880C /* TeaCDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaCDManager.swift; sourceTree = "<group>"; };
+		74F70FD12E32DF2600C8880C /* Tea.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tea.xcdatamodel; sourceTree = "<group>"; };
+		74F70FD42E32DF2600C8880C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		74F70FD72E32DF2600C8880C /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		74F70FD82E32DF2600C8880C /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		74F70FDC2E32DF2600C8880C /* NewTeaVew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTeaVew.swift; sourceTree = "<group>"; };
+		74F70FDD2E32DF2600C8880C /* TeaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaListView.swift; sourceTree = "<group>"; };
+		74F70FDE2E32DF2600C8880C /* TeaListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaListViewModel.swift; sourceTree = "<group>"; };
+		B6385156582A8C6104C6D850 /* Pods_Tea_recipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tea_recipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBB2B47C2E05C4F221AA61A /* Pods-Tea recipe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea recipe.release.xcconfig"; path = "Target Support Files/Pods-Tea recipe/Pods-Tea recipe.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74F70F532E32DE9100C8880C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C0B3EC2D16EDFD384F9661F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6385156582A8C6104C6D850 /* Pods_Tea_recipe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57DB6D4FB2D815E5E8F655F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4145ADE550D5B52BF50DB6B1 /* Pods-Tea recipe.debug.xcconfig */,
+				FBBB2B47C2E05C4F221AA61A /* Pods-Tea recipe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		74F70F4D2E32DE9100C8880C = {
+			isa = PBXGroup;
+			children = (
+				74F70F792E32DEA900C8880C /* Tea recipe */,
+				74F70F572E32DE9100C8880C /* Products */,
+				57DB6D4FB2D815E5E8F655F9 /* Pods */,
+				1C0B3EC2D16EDFD384F9661F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		74F70F572E32DE9100C8880C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74F70F562E32DE9100C8880C /* Tea recipe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74F70F792E32DEA900C8880C /* Tea recipe */ = {
+			isa = PBXGroup;
+			children = (
+				74F70F702E32DEA900C8880C /* AppDelegate.swift */,
+				74F70F712E32DEA900C8880C /* Assets.xcassets */,
+				74F70F722E32DEA900C8880C /* Info.plist */,
+				74F70F742E32DEA900C8880C /* LaunchScreen.storyboard */,
+				74F70F762E32DEA900C8880C /* Main.storyboard */,
+				74F70F772E32DEA900C8880C /* SceneDelegate.swift */,
+				74F70F782E32DEA900C8880C /* ViewController.swift */,
+				74F70FC82E32DF2600C8880C /* Cells */,
+				74F70FBD2E32DF2600C8880C /* Collection */,
+				74F70FD02E32DF2600C8880C /* Coredata */,
+				74F70FD92E32DF2600C8880C /* FavoriteView */,
+				74F70FB62E32DF2600C8880C /* OnBoarding */,
+				74F70FD52E32DF2600C8880C /* Settings */,
+				74F70FDF2E32DF2600C8880C /* Tea */,
+				74F70FAF2E32DF0200C8880C /* MainView.swift */,
+				74F70FB02E32DF0200C8880C /* RootView.swift */,
+				74F70FB12E32DF0200C8880C /* SplashScreen.swift */,
+			);
+			path = "Tea recipe";
+			sourceTree = "<group>";
+		};
+		74F70FB62E32DF2600C8880C /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				74F70FB52E32DF2600C8880C /* OnboardingView.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		74F70FBD2E32DF2600C8880C /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				74F70FB82E32DF2600C8880C /* AddTeaForCollectionView.swift */,
+				74F70FB92E32DF2600C8880C /* CollectionOpenView.swift */,
+				74F70FBA2E32DF2600C8880C /* CollectionView.swift */,
+				74F70FBB2E32DF2600C8880C /* CollectionViewModel.swift */,
+				74F70FBC2E32DF2600C8880C /* NewCollectionView.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		74F70FC82E32DF2600C8880C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				74F70FC32E32DF2600C8880C /* CellForAddTeaview.swift */,
+				74F70FC42E32DF2600C8880C /* CellForCollectionTEeaView.swift */,
+				74F70FC52E32DF2600C8880C /* CellForCollectionview.swift */,
+				74F70FC62E32DF2600C8880C /* CellForTeaView.swift */,
+				74F70FC72E32DF2600C8880C /* CustonTextField.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		74F70FD02E32DF2600C8880C /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				74F70FCE2E32DF2600C8880C /* Tea.xcdatamodeld */,
+				74F70FCF2E32DF2600C8880C /* TeaCDManager.swift */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		74F70FD52E32DF2600C8880C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				74F70FD42E32DF2600C8880C /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		74F70FD92E32DF2600C8880C /* FavoriteView */ = {
+			isa = PBXGroup;
+			children = (
+				74F70FD72E32DF2600C8880C /* FavoritesView.swift */,
+				74F70FD82E32DF2600C8880C /* FavoriteViewModel.swift */,
+			);
+			path = FavoriteView;
+			sourceTree = "<group>";
+		};
+		74F70FDF2E32DF2600C8880C /* Tea */ = {
+			isa = PBXGroup;
+			children = (
+				74F70FDC2E32DF2600C8880C /* NewTeaVew.swift */,
+				74F70FDD2E32DF2600C8880C /* TeaListView.swift */,
+				74F70FDE2E32DF2600C8880C /* TeaListViewModel.swift */,
+			);
+			path = Tea;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74F70F552E32DE9100C8880C /* Tea recipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74F70F692E32DE9100C8880C /* Build configuration list for PBXNativeTarget "Tea recipe" */;
+			buildPhases = (
+				EE2C211B3F288A8C2F40DE4B /* [CP] Check Pods Manifest.lock */,
+				74F70F522E32DE9100C8880C /* Sources */,
+				74F70F532E32DE9100C8880C /* Frameworks */,
+				74F70F542E32DE9100C8880C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tea recipe";
+			productName = "Tea recipe";
+			productReference = 74F70F562E32DE9100C8880C /* Tea recipe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74F70F4E2E32DE9100C8880C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					74F70F552E32DE9100C8880C = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = 74F70F512E32DE9100C8880C /* Build configuration list for PBXProject "Tea recipe" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74F70F4D2E32DE9100C8880C;
+			productRefGroup = 74F70F572E32DE9100C8880C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74F70F552E32DE9100C8880C /* Tea recipe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74F70F542E32DE9100C8880C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74F70F7D2E32DEA900C8880C /* Assets.xcassets in Resources */,
+				74F70F7F2E32DEA900C8880C /* LaunchScreen.storyboard in Resources */,
+				74F70F802E32DEA900C8880C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE2C211B3F288A8C2F40DE4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tea recipe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74F70F522E32DE9100C8880C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74F70F7A2E32DEA900C8880C /* AppDelegate.swift in Sources */,
+				74F70FB22E32DF0200C8880C /* RootView.swift in Sources */,
+				74F70FB32E32DF0200C8880C /* SplashScreen.swift in Sources */,
+				74F70FB42E32DF0200C8880C /* MainView.swift in Sources */,
+				74F70FBE2E32DF2600C8880C /* AddTeaForCollectionView.swift in Sources */,
+				74F70FC92E32DF2600C8880C /* CellForAddTeaview.swift in Sources */,
+				74F70FCA2E32DF2600C8880C /* CellForCollectionTEeaView.swift in Sources */,
+				74F70FCB2E32DF2600C8880C /* CellForCollectionview.swift in Sources */,
+				74F70FCC2E32DF2600C8880C /* CellForTeaView.swift in Sources */,
+				74F70FCD2E32DF2600C8880C /* CustonTextField.swift in Sources */,
+				74F70FBF2E32DF2600C8880C /* CollectionOpenView.swift in Sources */,
+				74F70FC02E32DF2600C8880C /* CollectionView.swift in Sources */,
+				74F70FE02E32DF2600C8880C /* NewTeaVew.swift in Sources */,
+				74F70FE12E32DF2600C8880C /* TeaListView.swift in Sources */,
+				74F70FE22E32DF2600C8880C /* TeaListViewModel.swift in Sources */,
+				74F70FC12E32DF2600C8880C /* CollectionViewModel.swift in Sources */,
+				74F70FC22E32DF2600C8880C /* NewCollectionView.swift in Sources */,
+				74F70FD62E32DF2600C8880C /* SettingsView.swift in Sources */,
+				74F70FD22E32DF2600C8880C /* Tea.xcdatamodeld in Sources */,
+				74F70FDA2E32DF2600C8880C /* FavoritesView.swift in Sources */,
+				74F70FDB2E32DF2600C8880C /* FavoriteViewModel.swift in Sources */,
+				74F70FD32E32DF2600C8880C /* TeaCDManager.swift in Sources */,
+				74F70FB72E32DF2600C8880C /* OnboardingView.swift in Sources */,
+				74F70F7B2E32DEA900C8880C /* SceneDelegate.swift in Sources */,
+				74F70F7C2E32DEA900C8880C /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		74F70F742E32DEA900C8880C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74F70F732E32DEA900C8880C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		74F70F762E32DEA900C8880C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74F70F752E32DEA900C8880C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74F70F6A2E32DE9100C8880C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4145ADE550D5B52BF50DB6B1 /* Pods-Tea recipe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tea recipe/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tea Recipe";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teacollection.str2022;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		74F70F6B2E32DE9100C8880C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBBB2B47C2E05C4F221AA61A /* Pods-Tea recipe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tea recipe/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tea Recipe";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.teacollection.str2022;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		74F70F6C2E32DE9100C8880C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74F70F6D2E32DE9100C8880C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74F70F512E32DE9100C8880C /* Build configuration list for PBXProject "Tea recipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F70F6C2E32DE9100C8880C /* Debug */,
+				74F70F6D2E32DE9100C8880C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74F70F692E32DE9100C8880C /* Build configuration list for PBXNativeTarget "Tea recipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F70F6A2E32DE9100C8880C /* Debug */,
+				74F70F6B2E32DE9100C8880C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		74F70FCE2E32DF2600C8880C /* Tea.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				74F70FD12E32DF2600C8880C /* Tea.xcdatamodel */,
+			);
+			currentVersion = 74F70FD12E32DF2600C8880C /* Tea.xcdatamodel */;
+			path = Tea.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 74F70F4E2E32DE9100C8880C /* Project object */;
+}

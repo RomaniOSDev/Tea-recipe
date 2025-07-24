@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23788.4" systemVersion="24F74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="CollectionTea" representedClassName="CollectionTea" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="tea" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TeaEmtry" inverseName="collection" inverseEntity="TeaEmtry"/>
+    </entity>
+    <entity name="TeaEmtry" representedClassName="TeaEmtry" syncable="YES" codeGenerationType="class">
+        <attribute name="bestPaired" optional="YES" attributeType="String"/>
+        <attribute name="brewingTemp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="brewingTime" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="color" optional="YES" attributeType="Binary"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <relationship name="collection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CollectionTea" inverseName="tea" inverseEntity="CollectionTea"/>
+    </entity>
+</model>
