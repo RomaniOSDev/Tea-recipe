@@ -12,6 +12,8 @@ struct SettingsView: View {
     
     @State var urlShare = "https://www.apple.com/app-store/"
     @State var isPresentShare: Bool = false
+    let manager = CDTeaManager.instance
+    @State private var showAlarm: Bool = false
     
     var body: some View {
         ZStack {
@@ -39,7 +41,18 @@ struct SettingsView: View {
                 } label: {
                     SettingsButtonView(text: "Usage policy")
                 }
+                
+                Button {
+                    showAlarm.toggle()
+                } label: {
+                    SettingsButtonView(text: "Delete all data")
+                }
 Spacer()
+            }
+            .alert(isPresented: $showAlarm) {
+                Alert(title: Text("Are you sure?"), message: Text("All data will be deleted"), primaryButton: .destructive(Text("Delete")) {
+                    self.manager.deleteAllData()
+                }, secondaryButton: .cancel())
             }
             .sheet(isPresented: $isPresentShare, content: {
                 ShareSheet(items: urlShare )

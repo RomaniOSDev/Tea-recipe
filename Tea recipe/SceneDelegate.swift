@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import AppsFlyerLib
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -16,9 +17,30 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else {return}
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = UIHostingController(rootView: RootView())
-        window?.makeKeyAndVisible()
         
+        let controller: UIViewController
+        controller = LoadingSplash()
+        
+        
+        window?.rootViewController = controller
+        window?.makeKeyAndVisible()
+
+        // 2. Обработка deep-ссылок из connectionOptions
+        for context in connectionOptions.urlContexts {
+            AppsFlyerLib.shared().handleOpen(context.url, options: nil)
+        }
+    }
+
+    // 3. Явно указываем имена параметров для избежания неоднозначности
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        URLContexts.forEach { context in
+            AppsFlyerLib.shared().handleOpen(context.url, options: nil)
+        }
+    }
+
+    // 4. Аналогично для Universal Links
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        AppsFlyerLib.shared().continue(userActivity, restorationHandler: nil)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

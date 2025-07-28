@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7446E2092E3780D1002CF49C /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7446E2072E3780D1002CF49C /* LoaderViewController.swift */; };
+		7446E20A2E3780D1002CF49C /* CheckLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7446E2052E3780D1002CF49C /* CheckLink.swift */; };
+		7446E20B2E3780D1002CF49C /* InternetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7446E2062E3780D1002CF49C /* InternetViewController.swift */; };
+		7446E20E2E3785AF002CF49C /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 7446E20D2E3785AF002CF49C /* OneSignalExtension */; };
+		7446E2102E3785AF002CF49C /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 7446E20F2E3785AF002CF49C /* OneSignalFramework */; };
+		7446E2122E3785AF002CF49C /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 7446E2112E3785AF002CF49C /* OneSignalInAppMessages */; };
+		7446E2142E3785AF002CF49C /* OneSignalLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 7446E2132E3785AF002CF49C /* OneSignalLocation */; };
+		7446E2172E3785CD002CF49C /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 7446E2162E3785CD002CF49C /* AppsFlyerLib */; };
 		74F70F7A2E32DEA900C8880C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70F702E32DEA900C8880C /* AppDelegate.swift */; };
 		74F70F7B2E32DEA900C8880C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70F772E32DEA900C8880C /* SceneDelegate.swift */; };
 		74F70F7C2E32DEA900C8880C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F70F782E32DEA900C8880C /* ViewController.swift */; };
@@ -39,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		4145ADE550D5B52BF50DB6B1 /* Pods-Tea recipe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea recipe.debug.xcconfig"; path = "Target Support Files/Pods-Tea recipe/Pods-Tea recipe.debug.xcconfig"; sourceTree = "<group>"; };
+		7446E2052E3780D1002CF49C /* CheckLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLink.swift; sourceTree = "<group>"; };
+		7446E2062E3780D1002CF49C /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
+		7446E2072E3780D1002CF49C /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
 		74F70F562E32DE9100C8880C /* Tea recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tea recipe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F70F702E32DEA900C8880C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F70F712E32DEA900C8880C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +89,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7446E2122E3785AF002CF49C /* OneSignalInAppMessages in Frameworks */,
+				7446E2172E3785CD002CF49C /* AppsFlyerLib in Frameworks */,
+				7446E2102E3785AF002CF49C /* OneSignalFramework in Frameworks */,
+				7446E2142E3785AF002CF49C /* OneSignalLocation in Frameworks */,
+				7446E20E2E3785AF002CF49C /* OneSignalExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +115,16 @@
 				FBBB2B47C2E05C4F221AA61A /* Pods-Tea recipe.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7446E2082E3780D1002CF49C /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				7446E2052E3780D1002CF49C /* CheckLink.swift */,
+				7446E2062E3780D1002CF49C /* InternetViewController.swift */,
+				7446E2072E3780D1002CF49C /* LoaderViewController.swift */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 		74F70F4D2E32DE9100C8880C = {
@@ -139,6 +165,7 @@
 				74F70FAF2E32DF0200C8880C /* MainView.swift */,
 				74F70FB02E32DF0200C8880C /* RootView.swift */,
 				74F70FB12E32DF0200C8880C /* SplashScreen.swift */,
+				7446E2082E3780D1002CF49C /* LoadingView */,
 			);
 			path = "Tea recipe";
 			sourceTree = "<group>";
@@ -256,6 +283,10 @@
 				Base,
 			);
 			mainGroup = 74F70F4D2E32DE9100C8880C;
+			packageReferences = (
+				7446E20C2E3785AF002CF49C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+				7446E2152E3785CD002CF49C /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+			);
 			productRefGroup = 74F70F572E32DE9100C8880C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -326,6 +357,9 @@
 				74F70FC12E32DF2600C8880C /* CollectionViewModel.swift in Sources */,
 				74F70FC22E32DF2600C8880C /* NewCollectionView.swift in Sources */,
 				74F70FD62E32DF2600C8880C /* SettingsView.swift in Sources */,
+				7446E2092E3780D1002CF49C /* LoaderViewController.swift in Sources */,
+				7446E20A2E3780D1002CF49C /* CheckLink.swift in Sources */,
+				7446E20B2E3780D1002CF49C /* InternetViewController.swift in Sources */,
 				74F70FD22E32DF2600C8880C /* Tea.xcdatamodeld in Sources */,
 				74F70FDA2E32DF2600C8880C /* FavoritesView.swift in Sources */,
 				74F70FDB2E32DF2600C8880C /* FavoriteViewModel.swift in Sources */,
@@ -379,7 +413,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.teacollection.str2022;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -413,7 +447,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.teacollection.str2022;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -567,6 +601,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7446E20C2E3785AF002CF49C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.14;
+			};
+		};
+		7446E2152E3785CD002CF49C /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7446E20D2E3785AF002CF49C /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7446E20C2E3785AF002CF49C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalExtension;
+		};
+		7446E20F2E3785AF002CF49C /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7446E20C2E3785AF002CF49C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
+		7446E2112E3785AF002CF49C /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7446E20C2E3785AF002CF49C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalInAppMessages;
+		};
+		7446E2132E3785AF002CF49C /* OneSignalLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7446E20C2E3785AF002CF49C /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalLocation;
+		};
+		7446E2162E3785CD002CF49C /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7446E2152E3785CD002CF49C /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		74F70FCE2E32DF2600C8880C /* Tea.xcdatamodeld */ = {

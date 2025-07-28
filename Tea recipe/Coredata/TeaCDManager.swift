@@ -33,4 +33,24 @@ final class CDTeaManager {
         }
         
     }
+    
+    func deleteAllData() {
+        let entities = container.managedObjectModel.entities
+        for entity in entities {
+            if let entityName = entity.name {
+                let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: entityName)
+                let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+                
+                do {
+                    try context.execute(deleteRequest)
+                    try context.save()
+                } catch let error {
+                    print("Error deleting \(entityName): \(error.localizedDescription)")
+                }
+            }
+        }
+        
+        // Сбрасываем контекст после удаления
+        context.reset()
+    }
 }
