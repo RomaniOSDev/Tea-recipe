@@ -16,6 +16,17 @@ struct NewTeaVew: View {
             Color.mainBack.ignoresSafeArea()
             ScrollView(.vertical) {
                 VStack(spacing: 20){
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundStyle(Color(uiColor: vm.simplrColor.color))
+                        HStack{
+                            Image(systemName: "cup.and.saucer.fill")
+                                .foregroundStyle(.black)
+                            Text(vm.simpleName)
+                            Spacer()
+                        }.padding()
+                    }
+                    .frame(height: 60)
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(spacing: 12) {
                             ForEach(ColorTea.allCases, id: \.self) { color in

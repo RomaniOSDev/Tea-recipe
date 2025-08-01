@@ -50,6 +50,7 @@
 		7446E2052E3780D1002CF49C /* CheckLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLink.swift; sourceTree = "<group>"; };
 		7446E2062E3780D1002CF49C /* InternetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetViewController.swift; sourceTree = "<group>"; };
 		7446E2072E3780D1002CF49C /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		74CF39C22E3D595C0006C134 /* Tea recipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tea recipe.entitlements"; sourceTree = "<group>"; };
 		74F70F562E32DE9100C8880C /* Tea recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tea recipe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F70F702E32DEA900C8880C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F70F712E32DEA900C8880C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -148,6 +149,7 @@
 		74F70F792E32DEA900C8880C /* Tea recipe */ = {
 			isa = PBXGroup;
 			children = (
+				74CF39C22E3D595C0006C134 /* Tea recipe.entitlements */,
 				74F70F702E32DEA900C8880C /* AppDelegate.swift */,
 				74F70F712E32DEA900C8880C /* Assets.xcassets */,
 				74F70F722E32DEA900C8880C /* Info.plist */,
@@ -398,11 +400,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Tea recipe/Tea recipe.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tea recipe/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Tea Recipe";
+				INFOPLIST_KEY_CFBundleDisplayName = "Blaze Tea Recipe";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -413,7 +416,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.teacollection.str2022;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -432,11 +435,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Tea recipe/Tea recipe.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Tea recipe/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Tea Recipe";
+				INFOPLIST_KEY_CFBundleDisplayName = "Blaze Tea Recipe";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -447,7 +451,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.teacollection.str2022;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
